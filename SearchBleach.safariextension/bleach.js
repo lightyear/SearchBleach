@@ -34,7 +34,7 @@ function response(event)
     var domains = event.message;
     
     var url = window.location + '';
-    if (url.match(/^https?:\/\/www\.google\.[a-z]+\/search/))
+    if (url.match(/^https?:\/\/www\.google\.[.a-z]+\/search/))
     {
       check_google_results(domains);
     }
