@@ -1,0 +1,15 @@
+{
+  "name": "Search Bleach",
+  "version": "1.0",
+  "description": "Removes search results from blocked domains.",
+  "homepage_url": "http://lightyearsoftware.com/open-source/search-bleach/",
+  "update_url": "http://lightyearsoftware.com/extensions/versions.xml",
+  "background_page": "global.html",
+  "content_scripts": [
+    {
+      "matches": [ "http://*/search*", "https://*/search*" ],
+      "js": [ "bleach.js" ]
+    }
+  ],
+  "options_page": "options.html"
+}

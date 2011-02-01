@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Search Bleach Extension Options</title>
+    <script type="text/javascript" charset="utf-8">
+      function restore_options()
+      {
+        var text_input = document.getElementById('domains');
+        text_input.value = localStorage['domains'];
+      }
+      
+      function save_options()
+      {
+        var text_input = document.getElementById('domains');
+        localStorage['domains'] = text_input.value;
+        chrome.extension.sendRequest({ 'request': 'reload_options' });
+        
+        var status = document.getElementById('status');
+        status.innerHTML = "Options saved.";
+        setTimeout(function() {
+          status.innerHTML = '';
+        }, 2000);
+      }
+    </script>
+    <style>
+      label { display: block; font-weight: bold; }
+    </style>
+  </head>
+  <body onload="restore_options()">
+    <h1>Search Bleach Options</h1>
+    <p>
+      <label for="domains">Hide these domains in search results:</label>
+      <input id="domains" type="text" size="100"></input>
+    </p>
+    <p>
+      <button onclick="save_options()">Save</button>
+      <span id="status"></span>      
+    </p>
+  </body>
+</html>
