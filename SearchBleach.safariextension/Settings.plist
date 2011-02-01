@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>DefaultValue</key>
-		<string>efreedom.com, comanswer.com, developerit.com, questionhub.com</string>
+		<string>efreedom.com, comanswer.com, developerit.com, questionhub.com, devcomments.com</string>
 		<key>Key</key>
 		<string>domains</string>
 		<key>Title</key>
