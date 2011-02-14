@@ -1,0 +1,3 @@
+content searchbleach content/
+overlay chrome://browser/content/browser.xul chrome://searchbleach/content/browser.xul
+locale searchbleach en locale/en/

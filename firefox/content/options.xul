@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://searchbleach/locale/translations.dtd">
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&searchbleach.preferences;">
+	<prefpane label="&searchbleach.preferences;">
+		<preferences>
+			<preference id="search-bleach-domains" name="extensions.searchbleach.domains" type="string"/>
+		</preferences>
+		<groupbox>
+			<caption label="&searchbleach.settings;"/>
+			<grid>
+				<rows>
+					<row>
+						<label control="domains" value="&searchbleach.blockeddomains;"/>
+						<textbox id="domains" preference="search-bleach-domains" size="80"/>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>	
+	</prefpane>
+</prefwindow>

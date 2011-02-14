@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>searchbleach@lightyearsoftware.com</em:id>
+    <em:name>Search Bleach</em:name>
+    <em:version>1.0</em:version>
+    <em:type>2</em:type>
+    <em:creator>Steve Madsen</em:creator>
+    <em:description>Removes search results from blocked domains.</em:description>
+    <em:homepageURL>http://lightyearsoftware.com/open-source/search-bleach/</em:homepageURL>
+    <em:optionsURL>chrome://searchbleach/content/options.xul</em:optionsURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
